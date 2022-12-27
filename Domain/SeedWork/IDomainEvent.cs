@@ -1,4 +1,4 @@
 ﻿
 // entities / domain
-interface IDomainEvent { }
+public interface IDomainEvent { }
 

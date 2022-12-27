@@ -1,4 +1,4 @@
-﻿class Account : Aggregate
+﻿public class Account : Aggregate
 {
     public string Name { get; set; }
     public string Email { get; set; }

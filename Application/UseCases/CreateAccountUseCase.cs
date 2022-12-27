@@ -1,8 +1,10 @@
-﻿record CreateAccountInput(string Name, string Email);
+﻿using PocMediatorExample.Mediator;
 
-record CreateAccountOutput(Guid Id);
+public record CreateAccountInput(string Name, string Email) : IRequest<CreateAccountOutput>;
 
-class CreateAccountUseCase
+public record CreateAccountOutput(Guid Id);
+
+public class CreateAccountUseCase : IHandler<CreateAccountInput, CreateAccountOutput>
 {
     private readonly IAccountRepository _accountRepository;
     private readonly IUnitOfWork _unitOfWork;

@@ -1,4 +1,4 @@
-﻿abstract class Aggregate
+﻿public abstract class Aggregate
 {
     public Guid Id { get; internal set; }
 

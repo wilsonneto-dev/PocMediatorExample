@@ -1,2 +1,2 @@
-﻿interface IUnitOfWork { Task Commit(); }
+﻿public interface IUnitOfWork { Task Commit(); }
 
