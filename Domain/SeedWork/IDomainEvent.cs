@@ -1,0 +1,4 @@
+﻿
+// entities / domain
+interface IDomainEvent { }
+

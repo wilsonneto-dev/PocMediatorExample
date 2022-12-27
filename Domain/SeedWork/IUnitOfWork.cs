@@ -1,0 +1,2 @@
+﻿interface IUnitOfWork { Task Commit(); }
+
